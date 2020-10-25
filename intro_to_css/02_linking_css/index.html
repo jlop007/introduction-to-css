@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Adding CSS to your page</title>
+    <!--An external stylesheet is the most common method of adding CSS to your web page.-->
+    <!--It is also the most efficient way out of the 3 methods because you can organize-->
+    <!--all your styles within a single file that you can then reference within all your web pages-->
+
+    <!--Link to external stylesheet in the head element-->
+    
+    <!--The rel attribute specifies the relationship between the current document you're on,
+     in this case the HTML document, and the document or resource that you are linking which in this case is the stylesheet-->
+
+    <!--The href attribute of the <link> element needs to reference a file on your file system-->
+    <link rel="stylesheet" href="styles.css">
+
+    <!--INTERNAL STYLESHEET-->
+    <!--An internal stylesheet are styles that live within an HTML document.
+    To create an internal stylesheet, you place CSS inside a <style> element contained inside the HTML <head>-->
+    <style>
+        h1{
+            background-color: black;
+        }
+    </style>
+    <!--If you only have 1 page then it doesn't make much of a difference if-->
+    <!--you use an internal or external stylesheet. The biggest difference is when-->
+    <!--you have multiple pages. Internal stylesheets are not very efficient because-->
+    <!--this means that you will have to include the same styles over and over again within-->
+    <!--each page. This can be a nightmare when it comes to maintaining your site because-->
+    <!--if you wish to make changes, you will have to modify each page as well.-->
+
+    <!--However, an internal stylesheet can be useful in certain situations. For example,-->
+    <!--if you're working with a content management system that doesn't let you modify the-->
+    <!--external stylesheet, then you can use internal styles to make changes.-->
+</head>
+<body>
+    <!--INLINE STYLES-->
+    <!--Inline styles are CSS declarations that affect a single HTML element.-->
+    <!--inline styles are placed within a style attribute that you add to an element.-->
+    <h1 style="font-size: 20px;padding: 10px;">I'm ready to be styled!</h1>
+    <!--Avoid using using inline styles when possible.-->
+    <!--It is not a good practice because, again, it's hard to maintain and not-->
+    <!--efficient if you have to make changes to multiple pages.-->
+    <!--It also makes your HTML markup hard to read.-->
+
+    <!--Inline styles are only useful if you're working in a restrictive environment-->
+    <!--such as only being allowed to modify the body of the page.-->
+</body>
+</html>

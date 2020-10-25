@@ -1,0 +1,51 @@
+
+/*CSS or (Cascading Style Sheets) is A style sheet language that
+allows you to take something such as plain HTML markup
+and transform it into a beautiful looking website.*/
+
+
+/*The browser applies basic styles make the document more readable. */
+/*1. Headings will look larger than regular text*/
+/*2. Paragraphs break onto a new line and have space between them*/
+/*3. Links are colored and underlined to distinguish them from the rest of the text*/
+
+
+/*Example - CSS Syntax*/
+/*CSS is a rule-based language.*/
+/*The rule opens with a selector.*/
+/*The selector will be the HTML element that we are going to be styling.*/
+/*In this case we are styling level one headings (<h1>)*/
+
+/*We then have a set of curly braces*/
+/*inside the curly braces we will have one or more declarations*/
+/*depending on the styles we want to apply. The declarations consist*/
+/*of property and value pairs.*/
+h1 {
+    /*color is a property*/
+    /*red is the value*/
+    /*colon and semicolon*/
+    color: red; /*can take colors*/
+    font-size: 70px; /*can take different units*/
+    /*Perfectly fine to look things up*/
+}
+
+p {
+    color: black;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:visited{
+    color: green;
+}
+
+a:hover{
+    color: white;
+    background-color: black;
+}
+/*RECAP*/
+/*Again, as I have mentioned before, CSS is a style sheet language*/
+/*for specifying how documents are presented to users —
+ whether it's how they are styled, laid out, animated, and much more.*/
